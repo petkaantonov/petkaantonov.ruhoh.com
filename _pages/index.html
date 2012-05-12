@@ -4,10 +4,18 @@ description:
 
 layout : page
 ---
-
-<h3>Start</h3>
-<p>
-  Ruhoh is all about the command-line.
-  <br>Check out the goods:
-</p>
-<pre><code>$ ruhoh help</code></pre>
+<div class="row">
+    <div class="span9">
+    {{#posts}}
+        <div class="well">
+        <h2><a href="{{url}}">{{title}}</a> <small>{{date}}</small></h2>
+        {{{content}}}
+        </div>
+    {{/posts}}
+    </div>
+    <div class="span3">
+        {{# db.posts.collated }}
+          {{> posts_collate }}
+        {{/ db.posts.collated }}
+    </div>
+</diV>

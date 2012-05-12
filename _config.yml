@@ -2,7 +2,7 @@
 RuhohSpec: '0.2'
 
 theme : twitter
-permalink: /:categories/:title
+permalink: /:title
 
 production_url : http://sample.com
 
@@ -31,4 +31,4 @@ syntax :
   provider : google_prettify
   google_prettify : 
       theme: twitter-bootstrap
-      linenums : true
+      linenums : false
